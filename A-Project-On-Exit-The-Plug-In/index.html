@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>web wisdom</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="web Wisdom: a web dev compition" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Javascript,Web Wisdom, Creative developer" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon.svg" />
+    <link rel="icon" sizes="32x32" href="./icon.svg" />
+    <link rel="icon" sizes="192x192" href="./icon.svg" />
+    <meta name="theme-color" content="#000" />
+    <meta name="author" content="sudo su" />
+    <style>
+      #hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #hero .section {
+        padding: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+      #hero .section div button {
+        padding: 10px 20px;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        background-color: var(--primary);
+        color: var(--bg);
+        border: none;
+        border-radius: 0.5rem;
+        transition: all 0.4s ease-in-out;
+      }
+      #hero .section div button:hover {
+        background-color: var(--bg);
+        color: var(--primary);
+      }
+      #tagline {
+        color: rgb(107, 107, 107);
+      }
+      #description {
+        width: 22rem;
+      }
+      #hero img {
+        height: 18rem;
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+      }
+
+      .con {
+        padding: 5px;
+        color: black;
+      }
+
+      #testimonial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #testimonial div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #testimonial div img {
+        padding: 30px;
+        transition: all 0.2s linear;
+      }
+      #testimonial div img:hover {
+        opacity: 0.7;
+      }
+
+      .box-compare {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .feature {
+        font-weight: 700;
+        font-size: larger;
+      }
+
+      .piont {
+        padding: 10px;
+        transition: all 0.2s linear;
+      }
+      .piont:hover {
+        scale: 1.1;
+      }
+
+      .piont span {
+        background: rgb(70, 70, 186);
+        border-radius: 50px;
+        padding: 0 3px;
+        margin-right: 10px;
+        color: white;
+        transition: all 0.1s linear;
+      }
+
+      .piont:hover span {
+        background-color: var(--bg);
+        color: rgb(70, 70, 186);
+      }
+
+      .box-compare {
+        display: flex;
+      }
+      .second {
+        display: flex;
+      }
+      .compare {
+        padding: 100px;
+      }
+      #pricing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+        padding: 4rem;
+      }
+      #pricing div.cards {
+        display: flex;
+        gap: 1rem;
+      }
+      #pricing h2.des {
+        font-weight: 400;
+        width: 35rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .card {
+        width: 20rem;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid var(--primary);
+        transition: all 0.4s ease-in-out;
+      }
+      .card > * {
+        margin-bottom: 1rem;
+      }
+      .card:hover {
+        scale: 1.15;
+      }
+      .card button {
+        padding: 10px 20px;
+        border: 1px solid var(--primary);
+        border-radius: 0.7rem;
+        color: var(--primary);
+        transition: all 0.4s ease-in-out;
+      }
+      .card p {
+        margin-left: 1rem;
+      }
+      .card button:hover {
+        background: var(--primary);
+        color: white;
+      }
+      .kamal {
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+      }
+      .gursewak {
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+      }
+      .name{
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><span>Sudo su</span><img src="./icon.svg" alt="logo" /></h1>
+      <nav>
+        <ul>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="hero">
+        <div class="section">
+          <h3 id="tagline">~ Get your first Portfolio website</h3>
+          <h1>best web developer in india</h1>
+          <h3 id="description">
+            we are a team of web developer who can help you get your first
+            website
+          </h3>
+          <div>
+            <button>See our Portfolio</button>
+            <button>Be our Client</button>
+          </div>
+        </div>
+        <div class="section">
+          <img src="./icon.svg" alt="logo" />
+        </div>
+      </div>
+      <div id="testimonial">
+        <h2>Our team members</h2>
+        <div>
+          <img
+            src="5ac2d69b-aa5f-4ae6-9d24-e92db1b2ea40.jpeg"
+            alt="kamal"
+            class="kamal"
+          />
+          <img
+            src="99513744-a313-4b29-b445-c0710fe19b0f.jpeg"
+            alt="gursewak"
+            class="gursewak"
+          />
+        </div>
+        <div class="names">
+          <h5 class="name">GURSEWAK SINGH</h5>
+          <h5 class="name">KAMAL KUMAR</h>
+        </div>
+      </div>
+      <div class="box-compare">
+        <div class="compare">
+          <ul>
+            <li class="feature">Basic</li>
+            <li class="piont"><span>&#x2713;</span> Process Analysis</li>
+            <li class="piont"><span>&#x2713;</span>Task Management</li>
+            <li class="piont"><span>&#x2713;</span>Time Tracking</li>
+            <li class="piont"><span>&#x2713;</span>Performance Metrics</li>
+            <li class="piont"><span>&#x2713;</span>Customizable Reports</li>
+            <li class="piont"><span>&#x2713;</span>Email Integration</li>
+            <li class="piont"><span>&#x2713;</span>Real-time Collaboration</li>
+            <li class="piont"><span>&#x2713;</span>Automated Workflows</li>
+          </ul>
+        </div>
+        <div class="compare">
+          <ul>
+            <li class="feature">Pro</li>
+            <li class="piont"><span>&#x2713;</span>Task Management</li>
+            <li class="piont"><span>&#x2713;</span>Time Tracking</li>
+            <li class="piont"><span>&#x2713;</span>Performance Metrics</li>
+            <li class="piont"><span>&#x2713;</span>Customizable Reports</li>
+            <li class="piont"><span>&#x2713;</span>Email Integration</li>
+            <li class="piont"><span>&#x2713;</span>Process Analysis</li>
+          </ul>
+        </div>
+        <div class="compare">
+          <ul>
+            <li class="feature">Business</li>
+            <li class="piont"><span>&#x2713;</span>Task Management</li>
+            <li class="piont"><span>&#x2713;</span>Time Tracking</li>
+            <li class="piont"><span>&#x2713;</span>Performance Metrics</li>
+            <li class="piont"><span>&#x2713;</span>Customizable Reports</li>
+            <li class="piont"><span>&#x2713;</span>Email Integration</li>
+            <li class="piont"><span>&#x2713;</span>Process Analysis</li>
+          </ul>
+        </div>
+      </div>
+      <div id="pricing">
+        <h1>Pricing</h1>
+        <h2 class="des">
+          Our princing is not expensive but it's not cheap either,it's exactly
+          what is should be.
+        </h2>
+        <div class="cards">
+          <div class="card">
+            <h2>Basic</h2>
+            <h1>$9</h1>
+            <p>for landing page</p>
+            <button>Get Started</button>
+          </div>
+          <div class="card">
+            <h2>Pro</h2>
+            <h1>$9</h1>
+            <p>for professional website</p>
+            <button>Get Started</button>
+          </div>
+          <div class="card">
+            <h2>Bussiness</h2>
+            <h1>$9</h1>
+            <p>for bussiness use</p>
+            <button>Get Started</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="item">
+        <a href="#" class="con">2021 © LandoAll rights reserved.</a>
+        <a href="#" class="con">Sudo Su</a>
+      </div>
+      <div class="item">
+        <a href="#" class="con">Pricing</a>
+        <a href="#" class="con">Home</a>
+        <a href="#" class="con">About us</a>
+        <a href="#" class="con">Contact</a>
+      </div>
+      <div class="item">
+        <a href="#" class="con">Instagram</a>
+        <a href="#" class="con">Facebook</a>
+        <a href="#" class="con">Twitter</a>
+        <a href="#" class="con">Linkedin</a>
+      </div>
+      <div class="item">
+        <a href="#" class="con">Privacy Policy</a>
+        <a href="#" class="con">Terms Of Service</a>
+      </div>
+    </footer>
+  </body>
+</html>
